@@ -7,7 +7,8 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 /compiler.xml
-
+# Used for Docker volume mount during development
+/destination-folder
 
 # Created by https://www.toptal.com/developers/gitignore/api/intellij
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij
