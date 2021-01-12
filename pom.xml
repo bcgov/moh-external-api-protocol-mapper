@@ -77,7 +77,7 @@
                                 <resource>
                                     <directory>/target</directory>
                                     <includes>
-                                        <include>CustomMapper-1.0-SNAPSHOT.jar</include>
+                                        <include>ExternalApiProtocolMapper-1.0-SNAPSHOT.jar</include>
                                     </includes>
                                 </resource>
                             </resources>
