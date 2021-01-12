@@ -31,6 +31,16 @@ The resulting JWT token can be decoded at https://jwt.io, but remember that a to
 
 Another option is to deploy an example application capable of obtaining and inspecting tokens. I recommend Keycloak's demo [JavaScript Example](https://github.com/keycloak/keycloak/tree/master/examples/js-console). You don't need to follow the steps given there, you just need to grab the `index.html` and `keycloak.json` files and deploy them anywhere handy. You will of course need to configure a public client on Keycloak and enter your settings in `keycloak.json`.
 
+## Example
+
+In the screenshot below, we configure the custom mapper to retrieve a JSON attribute named "origin" from the https://httpbin.org/get API, and set it as a claim named "special":
+
+![image](https://user-images.githubusercontent.com/1767127/104387913-fc7d0980-54ec-11eb-9ba5-8d1402b043a1.png)
+
+In the screenshot below, we inspect the token in Keycloak's [JavaScript Example]:
+
+![image](https://user-images.githubusercontent.com/1767127/104388165-82995000-54ed-11eb-8a02-06fd177fc4cc.png)
+
 ## Private SPI
 
 During plugin installation, you may see this warning in the Keycloak log:  
