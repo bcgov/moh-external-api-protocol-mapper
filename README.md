@@ -9,6 +9,10 @@ This repository contains a proof-of-concept Keycloak plug-in that adds extra cla
 
 The JAR will be hot deployed, so Keycloak can be running or not.
 
+Tested with:
+* Keycloak 9.0.2 (Docker image quay.io/keycloak/keycloak:9.0.2)
+* Maven 3.6.3
+
 ## Configuration
 
 The plugin is a custom OIDC Protocol Mapper, and it is configured like other mappers.
