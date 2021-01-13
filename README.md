@@ -41,7 +41,7 @@ In the screenshot below, we configure the custom mapper to retrieve a JSON attri
 
 ![image](https://user-images.githubusercontent.com/1767127/104387913-fc7d0980-54ec-11eb-9ba5-8d1402b043a1.png)
 
-In the screenshot below, we inspect the token in Keycloak's [JavaScript Example]:
+In the screenshot below, we inspect the token in Keycloak's [JavaScript Example](https://github.com/keycloak/keycloak/tree/master/examples/js-console):
 
 ![image](https://user-images.githubusercontent.com/1767127/104388165-82995000-54ed-11eb-8a02-06fd177fc4cc.png)
 
