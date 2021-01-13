@@ -19,6 +19,9 @@ import java.net.http.HttpResponse;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * An OIDC protocol mapper that retrieves data from an HTTP JSON API and adds it as a claim to the token(s).
+ */
 public class CustomOIDCProtocolMapper extends AbstractOIDCProtocolMapper implements OIDCAccessTokenMapper, OIDCIDTokenMapper, UserInfoTokenMapper {
 
     public static final String PROVIDER_ID = "oidc-customprotocolmapper";
@@ -73,6 +76,7 @@ public class CustomOIDCProtocolMapper extends AbstractOIDCProtocolMapper impleme
         return "Retrieve attribute from external API.";
     }
 
+    @Override
     protected void setClaim(IDToken token, ProtocolMapperModel mappingModel, UserSessionModel userSession, KeycloakSession keycloakSession,
                             ClientSessionContext clientSessionCtx) {
 
@@ -88,7 +92,7 @@ public class CustomOIDCProtocolMapper extends AbstractOIDCProtocolMapper impleme
 
     private static final HttpClient httpClient = HttpClient.newHttpClient();
 
-    public String retrieveAttribute(String url, String attName) {
+    static String retrieveAttribute(String url, String attName) {
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
                 .uri(URI.create(url))
